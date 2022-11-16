@@ -1,0 +1,52 @@
+
+img {
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+div {
+    background-color: rgb(131, 133, 145);
+    border: 2px double black;
+    border-radius: 10px;
+    width: 250px;
+    height: 500px;
+    text-align: center;
+}
+h1 {
+    color: blanchedalmond;
+    margin-top: 20px;
+   
+}
+i {
+    font-size: 28px;
+    
+    
+    
+}
+.dugme {
+    
+    width: 200px;
+    height: 40px;
+    border: 2px dashed black;
+    border-radius: 20px;
+    margin-left: 24px;
+    padding-bottom: 25px;
+    
+}
+    
+
+p {
+    text-align: center;
+    color: whitesmoke;
+    padding-left: 10px;
+    font-size: 20px;
+
+}
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+}

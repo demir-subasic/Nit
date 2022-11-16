@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    
+    background-image: url("https://s1.citypass.net/_next/gcms/media/resize=fit:crop,width:700,height:567/quality=value:85/compress/f0S8sditRN6o5O0liEaJ");
+    background-size: cover;
+    height: 100vh;
+
+}
+.main  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+}
+ul li a{
+    margin-right: 20px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: rgb(131, 81, 81);
+    font-size: 25px;
+}
+ul li{
+    list-style-type: none;
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+h1{
+    color: rgb(20, 54, 65);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 80px;
+}
+.btn{
+    border: 1px solid white;
+    padding: 10px;
+    margin: 2px;
+    text-decoration: none;
+    color: rgb(20, 54, 65);
+    border-radius: 10%;
+}

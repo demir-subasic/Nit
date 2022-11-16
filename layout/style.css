@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header{
+    height: 132px;
+    background-color: darkgoldenrod;
+    text-align: center;
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+}
+article{
+    width: 25%;
+    height: 400px;
+    background-color: blanchedalmond;
+}
+nav{
+    width: 50%;
+    height: 400px;
+    background-color: darkorchid;
+}
+aside{
+    width: 25%;
+    height: 400px;
+    background-color: dimgrey;
+}
+footer{
+    height: 132px;
+    background-color: darkgoldenrod;
+    text-align: center;
+}
