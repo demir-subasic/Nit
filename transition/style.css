@@ -1,0 +1,59 @@
+
+#div1{
+    width: 200px;
+    height: 100px;
+    background-color: chartreuse;
+    border: 1px solid black;
+   
+    
+}
+#div1:hover{
+    transition: 200ms;
+    transition-delay: 1000ms;
+    height: 300px;
+    width: 300px;
+    
+}
+#div2{
+    width: 200px;
+    height: 150px;
+    background-color: chocolate;
+    border: 1px solid black;
+    transition: height 500ms;
+    transition-timing-function: ease-in;
+
+}
+#div2:hover{
+    height: 400px;
+    transition-delay: 100ms;
+}
+#div3{
+    width: 200px;
+    height: 100px;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    transition: height 500ms;
+    transition-timing-function: ease-out;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 400ms;
+}
+#div3:hover{
+    height: 270px;
+    
+}
+#div4{
+    width: 200px;
+    height: 170px;
+    background-color: darkkhaki;
+    border: 1px solid black;
+    transition: height 500ms;
+    transition: transform 1000ms;
+    transition-property: height background transform;
+    transition-timing-function: ease-in-out;
+    
+}
+#div4:hover{
+    height: 220px;
+    background-color: black;
+    transform: rotate(15deg);
+}
