@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.photo{
+    width: 290px;
+    height: 178px;
+}
+#card{
+    margin-top: 150px;
+    height: 360px;
+    width: 292px;
+    border: 2px solid grey;
+    background-color: rgb(169, 243, 173);
+    -webkit-box-shadow: -18px 13px 46px -3px rgba(122,102,122,0.73);
+-moz-box-shadow: -18px 13px 46px -3px rgba(122,102,122,0.73);
+box-shadow: -18px 13px 46px -3px rgba(122,102,122,0.73);
+    
+}
+.image{
+    border-bottom: 3px solid grey;
+    height: 180px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1rem;
+    padding: 15px 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color: rgb(85, 128, 129);
+    margin-bottom: 10px;
+}
+p{
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0 12px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px
+}
+span{
+    font-style: unset;
+    margin-left: 12px;
+    font-size: 1rem;
+    border-bottom: 1px double black;
+    border-bottom-style: outset;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+button{
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    width: 90px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+button:hover{
+    background-color: rgb(70, 114, 114);
+    border-style: none;
+    color: white;
+    font-weight: 600;
+    
+    
+}
+@media only screen and (max-width: 400px) {
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #card{
+        margin-top: 10px;
+    }
+    
+    
+}
