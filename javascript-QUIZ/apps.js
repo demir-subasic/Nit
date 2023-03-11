@@ -4,19 +4,41 @@ const QUESTIONS = [
         question: "Koja je najveca planina na svetu?",
         answers: ["Kilimandzaro", "Fudzi", "Mont Everest", "K2", "Kopaonik"],
         correct_answer: "Mont Everest",
-        points: 5,
+        points: 1,
     },
     {
         id: 2,
         question: "Koliko minuta traje fudbalska utakmica?",
         answers: ["45", "60", "90", "75", "120"],
         correct_answer: "90",
-        points: 5,
+        points: 1,
     },
+    {
+        id: 3,
+        question: "Koje godine je poceo prvi svetski rat?",
+        answers: ["1915", "1914", "1916", "1939", "1918"],
+        correct_answer: "1914",
+        points: 1,
+    },
+    {
+        id: 4,
+        question: "Koja je zvanicna valuta u Danskoj?",
+        answers: ["Kruna", "Franak", "Dinar", "Lev", "Euro"],
+        correct_answer: "Kruna",
+        points: 1,
+    },
+    {
+        id: 5,
+        question: "Koji je glavni grad Makedonije",
+        answers: ["Sofija", "Prag", "Sarajevo", "Skoplje", "Budimpesta"],
+        correct_answer: "Skoplje",
+        points: 1,
+    }
     
 ];
-let CURRENT_POINTS = 0
+let CURRENT_POINTS = 0;
 let i = 0;
+let START_POINTS = QUESTIONS.length;
 
 const maxPoints = QUESTIONS.reduce((prev, curr) => {
    return prev + curr.points}, 0);
@@ -46,7 +68,7 @@ const initializeQuiz = () => {
         answersContainer.appendChild(button)
     });
 } else {
-    questionContainer.textContent = `Kraj kviza osvojili ste ${CURRENT_POINTS} poena`;
+    questionContainer.textContent = `Kraj kviza osvojili ste ${CURRENT_POINTS} / ${START_POINTS} poena`;
 }
 };
 
