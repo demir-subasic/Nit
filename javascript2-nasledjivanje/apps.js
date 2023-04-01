@@ -1,68 +1,99 @@
-class Animal {
-    constructor(species, weight) {
-        this.species = species;
-        this.weight = weight;
-    }
+// class Animal {
+//     constructor(species, weight) {
+//         this.species = species;
+//         this.weight = weight;
+//     }
 
-    wakeUp(){
-        return `${this.species} is going to wake up`
-    }
+//     wakeUp(){
+//         return `${this.species} is going to wake up`
+//     }
 
-    eat(){
-    return `${this.species} have a ${this.weight} kilos`
-    }
+//     eat(){
+//     return `${this.species} have a ${this.weight} kilos`
+//     }
 
-    sleep(){
-        return `${this.species} sleeping a 4 hours per day`
-    }
-    barking(){
-        return `${this.species} barking all time`
+//     sleep(){
+//         return `${this.species} sleeping a 4 hours per day`
+//     }
+//     barking(){
+//         return `${this.species} barking all time`
+//     }
+// }
+
+// const macka = new Animal("Sibirksa", 7)
+// macka.eat()
+
+// const ptica = new Animal("Golub")
+// ptica.sleep()
+
+// class Elephant extends Animal {
+//     constructor(species, weight){
+//     super(species, weight) 
+//     }
+
+//     dailyRoutine(){
+//         return `${super.wakeUp()} then ${super.eat()} and then ${super.sleep()}`
+//     }
+// }
+
+// const display = (content) => {
+//     console.log(content)
+// }
+
+// const elephant = new Elephant("African", "1T")
+
+// display(elephant.dailyRoutine())
+
+
+
+
+// class Dog extends Animal {
+//     constructor(species, weight){
+//         super(species, weight)
+//     }
+
+//     dailyRoutine(){
+//         return `${super.wakeUp()} then ${super.eat()} and then ${super.sleep()} and then ${this.barking()}`
+//     }
+
+// }
+// const dog = new Dog("Husky", "15kg")
+
+// display(dog.dailyRoutine())
+
+
+
+
+
+
+
+
+
+//DOMACI
+
+class Osoba {
+    constructor(ime, prezime){
+        this.ime = ime;
+        this.prezime = prezime
     }
 }
 
-const macka = new Animal("Sibirksa", 7)
-macka.eat()
-
-const ptica = new Animal("Golub")
-ptica.sleep()
-
-class Elephant extends Animal {
-    constructor(species, weight){
-    super(species, weight) 
+class Student extends Osoba {
+    constructor(ime, prezime, fakultet){
+        super(ime, prezime)
+        this.fakultet = fakultet;
     }
-
-    dailyRoutine(){
-        return `${super.wakeUp()} then ${super.eat()} and then ${super.sleep()}`
+    prijavaIspita(){
+        return `Ja sam ${this.ime} ${this.prezime} sa fakluteta${this.fakultet}`
     }
 }
+
+const student = new Student("Demir", "Subasic", "Racunarskih nauka")
 
 const display = (content) => {
     console.log(content)
 }
 
-const elephant = new Elephant("African", "1T")
-
-display(elephant.dailyRoutine())
-
-
-
-
-class Dog extends Animal {
-    constructor(species, weight){
-        super(species, weight)
-    }
-
-    dailyRoutine(){
-        return `${super.wakeUp()} then ${super.eat()} and then ${super.sleep()} and then ${this.barking()}`
-    }
-
-}
-const dog = new Dog("Husky", "15kg")
-
-display(dog.dailyRoutine())
-
-
-
-
+display(student.prijavaIspita())
 
 
