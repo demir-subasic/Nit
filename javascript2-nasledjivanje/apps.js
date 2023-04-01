@@ -71,29 +71,90 @@
 
 //DOMACI
 
-class Osoba {
-    constructor(ime, prezime){
-        this.ime = ime;
-        this.prezime = prezime
+// class Osoba {
+//     constructor(ime, prezime){
+//         this.ime = ime;
+//         this.prezime = prezime
+//     }
+// }
+
+// class Student extends Osoba {
+//     constructor(ime, prezime, fakultet){
+//         super(ime, prezime)
+//         this.fakultet = fakultet;
+//     }
+//     prijavaIspita(){
+//         return `Ja sam ${this.ime} ${this.prezime} sa fakluteta ${this.fakultet}`
+//     }
+// }
+
+// const student = new Student("Demir", "Subasic", "Racunarskih nauka")
+
+// const display = (content) => {
+//     console.log(content)
+// }
+
+// display(student.prijavaIspita())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//VEZBA
+//Napraviti Klasu Vozilo koja ima boju, brzinu i model i tri metode
+//pokreni(), zaustavi(), promeniBrzinu()
+//Napraviti klasu Automobil koja nasledjuje klasu Vozilo
+//Klasa Automobil ima jedan novi properti: marka
+//Napraviti instancu za obe klase i pozvati metode i za Vozilo i Automobil
+
+
+
+class Vehicle {
+    constructor(model, color, speed){
+        this.model = model
+        this.color = color
+        this.speed = speed
     }
 }
+const vehicle = new Vehicle("")
 
-class Student extends Osoba {
-    constructor(ime, prezime, fakultet){
-        super(ime, prezime)
-        this.fakultet = fakultet;
+class Car extends Vehicle{
+    constructor (color, speed, model, brand){
+        super(color, speed, model)
+        this.brand = brand
     }
-    prijavaIspita(){
-        return `Ja sam ${this.ime} ${this.prezime} sa fakluteta${this.fakultet}`
+    pokreni() {
+        console.log(`Vozilo ${this.model} se pokrenulo`)
     }
+
+    zaustavi(){
+        console.log(`Vozilo ${this.model} ima brzinu od ${this.speed}`)
+    }
+
+    promeniBrzinu(){
+        console.log(`${this.color} ${this.model} marke ${this.brand}, promenio je brzinu na ${this.speed}`)
+    }
+
 }
+const car = new Car("Honda", "red", 0)
+const car1 = new Car("Mercedes", "blue", 0)
+const car3 = new Car("Passat", "Beli", "20", "Volkswagen")
 
-const student = new Student("Demir", "Subasic", "Racunarskih nauka")
+car.pokreni()
+car1.zaustavi()
+car3.promeniBrzinu()
 
-const display = (content) => {
-    console.log(content)
-}
 
-display(student.prijavaIspita())
+
 
 
